@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>boucle check</title>
+        <meta charset="UTF8">
+        <meta name="boucle check">
+
+        <script>
+            var i = 0
+            while(i < 10)
+            {
+                console.log(i)
+                i++
+            }
+            var j = 10
+            while (j <= 15)
+            {
+                console.log(j)
+                j++
+            }
+            for(k = 15; k <= 20; k++)
+            {
+                console.log(k)
+            }
+            console.log("\n")
+            var tab_eleves = ['david', 'chris', 'julien']
+            console.log(tab_eleves[0])
+            for (a = 0; a < tab_eleves.length; a++)
+            {
+                console.log("Dans la classe il y a " + tab_eleves[a])
+            }
+
+            nb = 41
+            var premier = true
+
+            for (i = 2; i < nb; i++)
+            {
+                if (nb % i === 0)
+                {
+                    premier = false
+                    console.log("ceci est pas un nombre premier")
+                    console.log(nb + ' divise par ' + i + ' = ' + nb % i)
+                    break
+                }
+            }
+            if (premier == true)
+                console.log('le nombre ' + nb + ' est premier')
+
+
+            var player = [
+                {
+                    name: ' neymar ',
+                    nb: 10
+                },
+
+                {
+                    name: ' di maria ',
+                    nb: 11
+                },
+
+                {
+                    name: ' bape ',
+                    nb: 7
+                }
+            ]
+
+            for(i = 0; i < player.length; i++)
+            {
+                var tmp = player[i]
+                console.log("l'attaque du psg sera composer de " + tmp.name)
+            }
+        </script>
+    </head>
+
+    <body>
+
+
+    </body>
+</html>

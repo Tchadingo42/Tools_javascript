@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Javascript tools 1</title>
+    <meta  charset="UTF8">
+    <meta name="little perosnal tools">
+
+    <script>
+    //    var str = "salut les amis"
+    //    console.log(str)
+    var     human = {
+        name: 'chris',
+        age: 18,
+        sexe: 'm'
+    }
+
+    if (human.age >= 18)
+    {
+        console.log("tu es majeur")
+    }
+    else
+        console.log("tu es mineur")
+
+    if (human.age >= 18 && human.age <= 25)
+    {
+        console.log("Vous avez acces au livret jeune")
+    }
+    else if (human.age < 18 && human.age > 0)
+    {
+        console.log("vous etes trop jeune pour avoir livret jeune cependant vous pouvez obtenir le livret junior")
+    }
+    else if (human.age)
+    {
+        console.log("vous avez acces au livret senior")
+    }
+    else
+        console.log("invalid age please enter another one")
+
+    if (human.name === 'chris')
+    {
+        console.log("tu es bien chris")
+    }
+    </script>
+</head>
+    <body>
+
+    </body> 
+</html>
