@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Try utilisation</title>
+        <meta charset="UTF8">
+        <meta name="little stuff dude">
+
+            <script>
+                var a = {}
+
+                try
+                {
+                    a.une_method()
+                }
+                catch(e)
+                {
+                    console.log("There's an error out there -> " + e)
+                }
+                finally 
+                {
+                    console.log("c'est parti les amis")
+                }
+
+                var demo = function(nb)
+                {
+                    if (nb > 5)
+                    {
+                        throw new Error("way too high bro")
+                    }
+                    return (nb * 2)
+                }
+
+                var double = function(nb)
+                {
+                    var res = double * 2
+                    if (Number.isNaN(res))
+                    {
+                        throw new Error("You need an integer to use the double function")
+                    }
+                    return (res)
+                }
+
+                console.log(double("sasa"))
+            </script>
+    </head>
+</html>
